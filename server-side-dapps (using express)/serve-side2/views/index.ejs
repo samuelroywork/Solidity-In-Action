@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BookShop Dapp
+        </title>
+
+
+    </head>
+
+    <body>
+        <h1>
+            BookShop Dapp
+        </h1>
+        <br /><br />
+
+        <div>
+
+          <form action="/setValue" method="POST">
+            <br><br>
+            <input type="text" name="BookID" placeholder="Enter Book ID" />
+            <br /><br />
+            <input type="text" name="title" placeholder="Enter Book Title" />
+            <br /><br />
+            <input type="text" name="Author" placeholder="Enter Author Name" />
+            <br /><br />
+            <input type="text" name="amount" placeholder="Enter Amount" />
+            <br /><br />
+            <input type="text" name="BankName" placeholder="Enter Bank Name" />
+            <br /><br />
+            <input type="text" name="ifsc" placeholder="Enter IFSC" />
+            <br /><br />
+            <input type="submit" value="Store"/>
+          </form>
+          <br><br>
+            <form action="/viewValue" method="POST">
+            <input type="text" name="returnid" placeholder="Enter the Book ID to return data" />
+            <input type="submit" value="GetValue"/>
+          </form>
+        </div>
+      
+      
+    </body>
+
+
+</html>

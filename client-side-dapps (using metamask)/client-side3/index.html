@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BookShop Dapp
+        </title>
+        <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"
+      integrity="sha512-mYc+D+NmmyR0Gcrzyae7q5HguBCS4cBHAsIk7gGhu0/ZyGg4z2YZDjyR2YQA/IMCMTNs4mnlw3vVdERzewpekQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/javascript/connection.js"></script>
+
+    </head>
+
+    <body>
+        <h1>
+            BookShop Dapp
+        </h1>
+        <br /><br />
+
+        <div>
+            <button onclick="connectToMetamask()">Login</button>
+        </div>
+        <br /><br />
+        <div>
+            <input type="text" id="BookID" placeholder="Enter Book ID" />
+            <br /><br />
+            <input type="text" id="title" placeholder="Enter Book Title" />
+            <br /><br />
+            <input type="text" id="Author" placeholder="Enter Author Name" />
+            <br /><br />
+            <input type="text" id="amount" placeholder="Enter Amount" />
+            <br /><br />
+            <input type="text" id="BankName" placeholder="Enter Bank Name" />
+            <br /><br />
+            <input type="text" id="IFSC" placeholder="Enter IFSC" />
+            <br /><br />
+            <button onclick="writedata()">Submit</button>
+          </div>
+
+          <div>
+            <input type="text" id="returnid" placeholder="Enter the Book ID to return data" />
+            <button onclick="readdata()">Submit</button>
+        </div>
+      </body>
+      
+
+
+
+    </body>
+
+
+
+
+
+</html>

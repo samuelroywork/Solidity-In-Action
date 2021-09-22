@@ -1,0 +1,10 @@
+geth version
+
+
+geth --datadir data init genesis_name.json
+
+
+geth --datadir data account new
+
+
+geth --identity "KBA" --networkid "5777" --datadir "data" --http --http.port "8545" --unlock "0" --http.corsdomain "*" --http.api "miner,eth,net,web3,personal" --allow-insecure-unlock --nodiscover --miner.etherbase "0"

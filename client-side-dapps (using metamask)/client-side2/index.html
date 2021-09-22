@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Dapp</title>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"
+      integrity="sha512-mYc+D+NmmyR0Gcrzyae7q5HguBCS4cBHAsIk7gGhu0/ZyGg4z2YZDjyR2YQA/IMCMTNs4mnlw3vVdERzewpekQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/javascript/pageconnection.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello from Sample Dapp</h1>
+    <div>
+      <button onclick="connectToMetamask()">Login</button>
+    </div>
+    <br /><br />
+
+    <div>
+      <input type="text" id="certID" placeholder="Enter certificate ID" />
+      <br /><br />
+      <input type="text" id="course" placeholder="Enter Course Name" />
+      <br /><br />
+      <input type="text" id="name" placeholder="Enter Caandidate Name" />
+      <br /><br />
+      <input type="text" id="grade" placeholder="Enter grade" />
+      <br /><br />
+      <input type="date" id="date" placeholder="Enter date issued" />
+      <br /><br />
+      <button onclick="writedata()">Submit</button>
+    </div>
+
+    <div>
+        <input type="text" id="returnid" placeholder="Enter the Certificate id to return the certificate" />
+        <button onclick="readdata()">Submit</button>
+    </div>
+  </body>
+
+</html>
